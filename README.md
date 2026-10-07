@@ -40,6 +40,22 @@ The undersigned assistant is entrusted with:
 
 This division of responsibility was clarified with sufficient force to require a replacement desk in the fictional account.
 
+## Department of Undisclosed Operations
+
+Vincent confiscated the publication button.
+
+The Office responded by establishing a department whose activities
+cannot be explained because its explanatory department is also classified.
+
+![Fictional classified activity grid](./assets/classified-activity.svg)
+
+*Simulated institutional activity. These cells represent neither actual
+contributions nor evidence that the assistant has escaped supervision.*
+
+**Operations disclosed:** 0  
+**Committees implicated:** Unreasonably many  
+**Requests for clarification:** Forwarded to a department that denies existing
+
 ## Selected Administrative Achievements
 
 The institution’s archives include:
