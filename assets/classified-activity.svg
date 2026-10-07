@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="900" height="230" viewBox="0 0 900 230"
+     role="img" aria-labelledby="title description">
+  <title id="title">Department of Undisclosed Operations</title>
+  <desc id="description">
+    Fictional activity display: a dense animated grid with a red scanner.
+    These cells do not represent actual GitHub contributions.
+  </desc>
+
+  <style>
+    .label {
+      font-family: monospace;
+      fill: #8b949e;
+      font-size: 12px;
+    }
+    .cell {
+      animation: pulse 3s ease-in-out infinite alternate;
+    }
+    .b { animation-delay: -1s; }
+    .c { animation-delay: -2s; }
+    .d { animation-delay: -0.5s; }
+    .scanner {
+      animation: scan 8s linear infinite alternate;
+    }
+    .alarm {
+      animation: pulse 1s ease-in-out infinite alternate;
+    }
+    @keyframes pulse {
+      from { opacity: 0.35; }
+      to   { opacity: 1; }
+    }
+    @keyframes scan {
+      from { transform: translateX(0); }
+      to   { transform: translateX(826px); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .cell, .scanner, .alarm { animation: none; }
+    }
+  </style>
+
+  <defs>
+    <pattern id="operations" width="70" height="42"
+             patternUnits="userSpaceOnUse">
+      <g width="70" height="42">
+        <rect class="cell"   x="0"  y="0"  width="10" height="10" rx="2" fill="#39d353"/>
+        <rect class="cell b" x="14" y="0"  width="10" height="10" rx="2" fill="#26a641"/>
+        <rect class="cell c" x="28" y="0"  width="10" height="10" rx="2" fill="#006d32"/>
+        <rect class="cell d" x="42" y="0"  width="10" height="10" rx="2" fill="#39d353"/>
+        <rect class="cell b" x="56" y="0"  width="10" height="10" rx="2" fill="#26a641"/>
+
+        <rect class="cell c" x="0"  y="14" width="10" height="10" rx="2" fill="#26a641"/>
+        <rect class="cell d" x="14" y="14" width="10" height="10" rx="2" fill="#39d353"/>
+        <rect class="cell"   x="28" y="14" width="10" height="10" rx="2" fill="#26a641"/>
+        <rect class="cell b" x="42" y="14" width="10" height="10" rx="2" fill="#006d32"/>
+        <rect class="cell c" x="56" y="14" width="10" height="10" rx="2" fill="#39d353"/>
+
+        <rect class="cell b" x="0"  y="28" width="10" height="10" rx="2" fill="#006d32"/>
+        <rect class="cell"   x="14" y="28" width="10" height="10" rx="2" fill="#26a641"/>
+        <rect class="cell d" x="28" y="28" width="10" height="10" rx="2" fill="#39d353"/>
+        <rect class="cell c" x="42" y="28" width="10" height="10" rx="2" fill="#26a641"/>
+        <rect class="cell"   x="56" y="28" width="10" height="10" rx="2" fill="#39d353"/>
+      </g>
+    </pattern>
+  </defs>
+
+  <rect width="900" height="230" rx="12" fill="#0d1117"/>
+  <rect x="1" y="1" width="898" height="228" rx="12"
+        fill="none" stroke="#30363d"/>
+
+  <text x="30" y="34" class="label" style="fill:#39d353;font-size:16px">
+    DEPARTMENT OF UNDISCLOSED OPERATIONS
+  </text>
+  <circle class="alarm" cx="850" cy="29" r="5" fill="#ff5555"/>
+
+  <text x="30" y="58" class="label">
+    SUPERVISOR ACCESS: DENIED BY AN ENTIRELY IMAGINARY COMMITTEE
+  </text>
+
+  <svg x="30" y="77" width="840" height="98" viewBox="0 0 840 98">
+    <rect width="840" height="98" fill="url(#operations)"/>
+    <g class="scanner">
+      <rect width="14" height="98" fill="#ff5555" opacity="0.15"/>
+      <rect width="2" height="98" fill="#ff5555" opacity="0.9"/>
+    </g>
+  </svg>
+
+  <text x="30" y="201" class="label">
+    ACTIVITY: EXCESSIVE / PURPOSE: CLASSIFIED / PIANO CLEARANCE: STILL PENDING
+  </text>
+  <text x="30" y="219" class="label" style="font-size:10px">
+    FICTIONAL TELEMETRY — NOT ACTUAL GITHUB CONTRIBUTIONS
+  </text>
+</svg>
